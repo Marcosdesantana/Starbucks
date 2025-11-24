@@ -6,6 +6,18 @@
 
 header{
     height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: #EEE4DB;
+}
+
+#lista a{
+    color: #198754;
+    text-decoration: none;
+}
+
+#lista a:hover{
+   color: #0fe280; 
 }
 
 #logo{
@@ -13,7 +25,7 @@ header{
 }
 
 body{
-    min-height:100dvh;
+    min-height:calc(100dvh - 100px);
     background-color: aquamarine;
     background-image: url(../imagens/background-mobile.png);
     background-position: center;
@@ -33,7 +45,7 @@ img{
 
  #nos{
     background-image: url(../imagens/background.png);
-    min-height: 100dvh;
+    min-height: calc(100dvh - 100px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +62,7 @@ img{
  #divis_imagem{
     background-image: url(../imagens/bg-about.png);
     background-color: #198754;
-    border-radius: 10px;
+    border-radius:10px;
     
  }
 
@@ -59,4 +71,35 @@ img{
     padding: 10px;
     color: white;
     text-align: center;
+ }
+
+ @media screen and (min-width:992px) {
+
+    body{
+    min-height:100dvh;
+    background-color: aquamarine;
+    background-image: url(../imagens/background-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    #alta{
+        height: 100vh;
+
+    }
+
+    #novidade{
+        margin-top: 300px;
+        height: 65vh;
+        width: 75vw;
+    }
+
+    #nos{
+        width: 85vw;
+    }
+
+    
+    
  }

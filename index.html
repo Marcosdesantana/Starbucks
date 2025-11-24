@@ -27,21 +27,21 @@
                     <img id="logo" src="imagens/logo-starbucks.png" alt="logo">
                 </div>
 
-                <div class="d-none d-md-block">
+                <div id="lista" class="d-none d-md-block">
                     <ul class=" d-flex list-unstyled mb-2">
-                      <li class="me-4">inicio</li>
+                      <li class="me-4"><a href="#home">Inicio</a></li>
                       <li class="me-4"><a href="#alta">Alta</a></li>
-                      <li class="me-4">sobre nós</li>
-                      <li class="me-4">novidades</li>
+                      <li class="me-4"><a href="#nos">Sobre Nós</a></li>
+                      <li class="me-4"><a href="#novidade">Novidades</a></li>
                     </ul>
                  </div>
 
-                 <div class="offcanvas offcanvas-start" id="painel" tabindex="-1">
+                 <div id="lista" class="offcanvas offcanvas-start" id="painel" tabindex="-1">
                     <ul class=" list-unstyled mb-2 offcanvas-body">
-                      <li class="me-4">inicio</li>
-                      <li class="me-4">alta</li>
-                      <li class="me-4">sobre nós</li>
-                      <li class="me-4">novidades</li>
+                      <li class="me-4"><a href="#home">Inicio</a></li>
+                      <li class="me-4"><a href="#alta">Alta</a></li>
+                      <li class="me-4"><a href="#nos">Sobre Nós</a></li>
+                      <li class="me-4"><a href="#novidade">Novidades</a></li>
                     </ul>
                  </div>
 
@@ -51,11 +51,11 @@
             </nav>
 
         </header>
-        <main class="col col-xxl-8 d-block mx-auto">
-            <section id="home" class="mb-5">
+        <main class="col col-xxl-8 d-block mx-auto d-lg-flex flex-column align-items-center">
+            <section id="home" class="mb-5 ">
 
-                <div id="home-imagem" class="d-block col col-5 col-lg-8 m-auto mb-3 mb-lg-5 ">
-                    <img src="imagens/detail.png" class="fs-4" alt="primeira foto">
+                <div id="home-imagem" class="d-block col col-5 col-lg-7 m-auto mb-3 mb-lg-5 ">
+                    <img src="imagens/detail.png" id="fotoprincipal" alt="primeira foto">
                 </div>
                 <div id="home-conteudo" class="col col-5 m-auto col-lg-6 text-center ">
                     <h1>Mais que café, uma <span>Experiência.</span></h1>
@@ -63,113 +63,102 @@
 
                     <div class="d-flex justify-content-center">
 
-                        <input class="btn btn-success m-2" type="button" value="conhecer">
-                        <input class="btn btn-outline-success m-2" type="button" value="contatar">
+                        <input class="btn btn-success m-2 fs-5" type="button" value="conhecer">
+                        <input class="btn btn-outline-success m-2 fs-5" type="button" value="contatar">
                         
                     </div>
                 </div>
 
             </section>
 
-            <section id="alta">
+            <section id="alta" class="d-lg-flex flex-column justify-content-center">
 
-                <h1 class="d-block col col-4 m-auto text-center"><span>EM</span> ALTA</h1>
+                <h1 class="d-block col col-4 mb-lg-5  mx-auto text-center"><span>EM</span> ALTA</h1>
 
-                <div class="text-center">
-                    <img src="imagens/card1.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-8 m-auto mb-3 mb-lg-5 ">
-
-                    <h2>Frappuccino</h2>
-                    <p>Avelã</p>
-                </div>
-
-                <div class="text-center">
-                    <img src="imagens/card2.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-8 m-auto mb-3 mb-lg-5 ">
-
-                    <h2>Frappuccino</h2>
-                    <p>Pistache</p>
-                </div>
-
-                <div class="text-center">
-                    <img src="imagens/card3.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-8 m-auto mb-3 mb-lg-5 ">
-
-                    <h2>Frappuccino</h2>
-                    <p>Morango</p>
+                <div id="emalta" class=" d-lg-flex justify-content-around mt-lg-0">
+                    <div class="text-center">
+                        <img src="imagens/card1.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-10 m-auto mb-3 mb-lg-5 ">
+                        <h2>Frappuccino</h2>
+                        <p>Avelã</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="imagens/card2.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-10 m-auto mb-3 mb-lg-5 ">
+                        <h2>Frappuccino</h2>
+                        <p>Pistache</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="imagens/card3.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-10 m-auto mb-3 mb-lg-5 ">
+                        <h2>Frappuccino</h2>
+                        <p>Morango</p>
+                    </div>
                 </div>
 
             </section>
 
-            <section id="nos" class="bg-success mb-5">
+            <section id="nos" class="bg-success mb-5 ">
+                
+                <h1 class="d-block col col-4 m-auto pt-5 text-center"><span>SO</span>BRE NÓS</h1>
 
-                <div>
-                   <h1 class="d-block col col-4 m-auto text-center "><span>SO</span>BRE NÓS</h1> 
-                   <img src="imagens/about-us.png" alt="imagem-em-alta1" class="d-block col col-5 col-lg-8 m-auto mb-3 mb-lg-5 ">
-                </div>
-
-                <div id="sobre_texto" class="d-block col col-6 m-auto text-center col-lg-8 mb-3">
-                    <h2 class="text-center text-warning"><span class="text-white">Nossa</span> História</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam autem! Quas tempore facere totam exercitationem ipsum amet unde tempora, minus nulla adipisci sit debitis neque repudiandae nihil eum blanditiis ipsam ullam rem qui aut. Nostrum excepturi quibusdam, animi atque corporis ad? Inventore, nobis in!
-                </div>
-
-                <div id="sobre_texto" class="d-block col col-6 mx-auto text-center col-lg-8 ">
-                    <h2 class="text-center text-warning"><span class="text-white">Nosso</span> Propósito</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam autem! Quas tempore facere totam exercitationem ipsum amet unde tempora, minus nulla adipisci sit debitis neque repudiandae nihil eum blanditiis ipsam ullam rem qui aut. Nostrum excepturi quibusdam, animi atque corporis ad? Inventore, nobis in!
+                <div id="conteudonos">
+                    <div class=" col-lg-6 col-lg-8 m-lg-auto">
+                       <img src="imagens/about-us.png" alt="imagem-em-alta1" class="d-block col col-5 m-auto mb-3 mb-lg-5 ">
+                    </div>
+                    <div id="sobre_texto" class="d-block col col-6 m-auto text-center mb-3">
+                        <h2 class="text-center text-warning"><span class="text-white">Nossa</span> História</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam autem! Quas tempore facere totam exercitationem ipsum amet unde tempora, minus nulla adipisci sit debitis neque repudiandae nihil eum blanditiis ipsam ullam rem qui aut. Nostrum excepturi quibusdam, animi atque corporis ad? Inventore, nobis in!
+                    </div>
+                    <div id="sobre_texto" class="d-block col col-6 m-auto text-center ">
+                        <h2 class="text-center text-warning"><span class="text-white">Nosso</span> Propósito</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam autem! Quas tempore facere totam exercitationem ipsum amet unde tempora, minus nulla adipisci sit debitis neque repudiandae nihil eum blanditiis ipsam ullam rem qui aut. Nostrum excepturi quibusdam, animi atque corporis ad? Inventore, nobis in!
+                    </div>
                 </div>
 
             </section>
 
             <section id="novidade">
-                <h1 class="d-block col col-4 m-auto text-center mb-3"><span>NO</span>VIDADES</h1>
+                <h1 class="d-block col col-4 m-auto mb-lg-5 text-center mb-3"><span>NO</span>VIDADES</h1>
 
-                <div id="divis_imagem" class="text-center d-block col col-10 m-auto mb-5">
-
-                    <div  class="text-center d-block col col-10 m-auto">
-                       <img src="imagens/1.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
-                    </div>
-
-                    <div class="text-light  mt-5 pb-3">
-                        <h2>Frappuccino</h2>
-                        <p>Avelã</p>
-                    </div>
+                <div class="d-lg-flex justify-content-evenly">
+                    <div id="divis_imagem" class="text-center d-block col me-lg-2 col-lg-3 col-10 m-auto mb-5">
+                        <div  class="text-center d-block col col-10  m-auto">
+                           <img src="imagens/1.png" alt="imagem-em-alta1" class="d-block col col-lg-8 col-6 m-auto mb-3 mb-lg-5 ">
+                        </div>
+                        <div class="text-light  mt-5 pb-3">
+                            <h2>Frappuccino</h2>
+                            <p>Avelã</p>
+                        </div>
                     
-                </div>
-
-                <div id="divis_imagem" class="text-center d-block col col-10 m-auto mb-5">
-
-                    <div  class="text-center d-block col col-10 m-auto">
-                       <img src="imagens/2.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
                     </div>
-
-                    <div class="text-light  mt-5 pb-3">
-                        <h2>Frappuccino</h2>
-                        <p>Avelã</p>
-                    </div>
+                    <div id="divis_imagem" class="text-center d-block col col-lg-3 col-10 m-auto mb-5">
+                        <div  class="text-center d-block col col-10 m-auto">
+                           <img src="imagens/2.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
+                        </div>
+                        <div class="text-light  mt-5 pb-3">
+                            <h2>Frappuccino</h2>
+                            <p>Avelã</p>
+                        </div>
                     
-                </div>
-
-                <div id="divis_imagem" class="text-center d-block col col-10 m-auto mb-5">
-
-                    <div  class="text-center d-block col col-10 m-auto">
-                       <img src="imagens/3.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
                     </div>
-
-                    <div class="text-light  mt-5 pb-3">
-                        <h2>Frappuccino</h2>
-                        <p>Avelã</p>
-                    </div>
+                    <div id="divis_imagem" class="text-center d-block col col-lg-3 mx-lg-2 col-10 m-auto mb-5">
+                        <div  class="text-center d-block col col-10 m-auto">
+                           <img src="imagens/3.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
+                        </div>
+                        <div class="text-light  mt-5 pb-3">
+                            <h2>Frappuccino</h2>
+                            <p>Avelã</p>
+                        </div>
                     
-                </div>
-
-                <div id="divis_imagem" class="text-center d-block col col-10 m-auto mb-5">
-
-                    <div  class="text-center d-block col col-10 m-auto">
-                       <img src="imagens/4.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
                     </div>
-
-                    <div class="text-light  mt-5 pb-3">
-                        <h2>Frappuccino</h2>
-                        <p>Avelã</p>
-                    </div>
+                    <div id="divis_imagem" class="text-center d-block col col-lg-3 col-10 m-auto mb-5">
+                        <div  class="text-center d-block col col-10 m-auto">
+                           <img src="imagens/4.png" alt="imagem-em-alta1" class="d-block col col-6 col-lg-8 m-auto mb-3 mb-lg-5 ">
+                        </div>
+                        <div class="text-light  mt-5 pb-3">
+                            <h2>Frappuccino</h2>
+                            <p>Avelã</p>
+                        </div>
                     
+                    </div>
                 </div>
 
             </section>
