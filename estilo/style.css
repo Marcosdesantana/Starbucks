@@ -11,12 +11,16 @@ header{
     background-color: #EEE4DB;
 }
 
-#lista a{
+a{
     color: #198754;
     text-decoration: none;
 }
 
-#lista a:hover{
+.lista{
+    text-align: center;
+}
+
+a:hover{
    color: #0fe280; 
 }
 
