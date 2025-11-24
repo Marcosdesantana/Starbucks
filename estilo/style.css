@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+}
+
+#logo{
+    width: 180px;
+}
+
+body{
+    min-height:100dvh;
+    background-color: aquamarine;
+    background-image: url(../imagens/background-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img{
+    width: 100%;
+
+
+    span{
+        color: green;
+    }
+ }
+
+ #nos{
+    background-image: url(../imagens/background.png);
+    min-height: 100dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+ }
+
+ #sobre_texto{
+    background-color: #198754;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ #divis_imagem{
+    background-image: url(../imagens/bg-about.png);
+    background-color: #198754;
+    border-radius: 10px;
+    
+ }
+
+ footer{
+    background-color: #198754;
+    padding: 10px;
+    color: white;
+    text-align: center;
+ }
